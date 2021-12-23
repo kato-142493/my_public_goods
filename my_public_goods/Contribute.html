@@ -1,0 +1,13 @@
+{{ block title }}
+    貢献額の決定
+{{ endblock }}
+
+{{ block content }}
+ <p>
+        これは 1 グループあたり{{ Constants.players_per_group }}人の公共財ゲームです。
+        初期保有額は{{ Constants.endowment }}であり，全プレイヤーの貢献額の合計が
+{{ Constants.multiplier }}倍されて，各プレイヤーに平等に分配されます。
+ </p>
+ {{ formfields }}
+ {{ next_button }}
+{{ endblock }}
